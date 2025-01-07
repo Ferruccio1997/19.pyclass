@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "19-pyclass"
+version = "0.1.0"
+description = ""
+authors = ["ferruccio_ribeiro <ferruccioribeiro@outlook.com>"]
+readme = "README.md"
+packages = [{include = "19"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+uvicorn = {extras = ["standard"], version = "^0.34.0"}
+sqlalchemy = "^2.0.36"
+pydantic = "^2.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
